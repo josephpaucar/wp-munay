@@ -7,7 +7,8 @@ add_theme_support('title-tag');
 
 register_nav_menus(
     array(
-        'top_menu' => 'Menú Principal'
+        'top_menu' => 'Menú Principal',
+        'footer_menu' => 'Menú en el Footer'
     )
 );
 
@@ -27,3 +28,20 @@ function assets(){
 }
 
 add_action( 'wp_enqueue_scripts', 'assets' );
+
+
+function sidebar_footer() {
+  register_sidebar( 
+    array(
+      'name' => 'Pie de página',
+      'id' => 'footer',
+      'description' => 'Zona de Widgets para pie de página',
+      'before_title' => '<h2>',
+      'after_title' => '</h2>',
+      'before_widget' => '<div id="%1$s" class="%2$s">',
+      'after_widget' => '</div>'
+    )
+  );
+}
+
+add_action( 'widgets_init', 'sidebar_footer' );
