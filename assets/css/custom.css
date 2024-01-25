@@ -548,10 +548,19 @@ video {
   display: flex;
   justify-content: center;
   color: white;
+  gap: 20px;
 }
 
-.munay_footer ul li {
-  margin: 0 10px;
+.munay_footer ul li a {
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  transition: all ease-in 300ms;
+}
+
+.munay_footer ul li a:hover {
+  color: #F2AC35;
+  transition: all ease-in 300ms;
 }
 
 .container {
