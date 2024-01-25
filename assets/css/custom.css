@@ -656,6 +656,11 @@ video {
   text-align: center;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-white\/70 {
   color: rgb(238 238 247 / 0.7);
 }
