@@ -1,20 +1,13 @@
 @tailwind base;
 
 .munay_footer ul{
-  display: flex;
-  justify-content: center;
-  color: white;
-  gap: 20px;
+  @apply flex flex-col md:flex-row justify-center items-center text-white gap-5;
 }
 .munay_footer ul li a {
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  transition: all ease-in 300ms;
+  @apply font-medium tracking-wide uppercase transition-all duration-300;
 }
 .munay_footer ul li a:hover {
-  color: #F2AC35;
-  transition: all ease-in 300ms;
+  @apply text-yellow transition-all duration-300;
 }
 
 @tailwind components;

@@ -1,4 +1,4 @@
-<footer class="bg-black p-5">
+<footer class="bg-black py-10 px-5">
     <div class="container mx-auto flex flex-col md:flex-row items-center">
         <div class="flex-none w-40 my-4 md:my-0">
             <a href="<?php echo get_home_url( ); ?>">

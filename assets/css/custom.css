@@ -544,23 +544,37 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.munay_footer ul{
+.munay_footer ul {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  color: white;
-  gap: 20px;
+  gap: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(238 238 247 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .munay_footer ul {
+    flex-direction: row;
+  }
 }
 
 .munay_footer ul li a {
   font-weight: 500;
-  letter-spacing: 0.3px;
   text-transform: uppercase;
-  transition: all ease-in 300ms;
+  letter-spacing: 0.025em;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .munay_footer ul li a:hover {
-  color: #F2AC35;
-  transition: all ease-in 300ms;
+  --tw-text-opacity: 1;
+  color: rgb(242 172 53 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .container {
@@ -619,6 +633,10 @@ video {
   width: 10rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .flex-none {
   flex: none;
 }
@@ -648,8 +666,14 @@ video {
   background-color: rgb(25 26 52 / var(--tw-bg-opacity));
 }
 
-.p-5 {
-  padding: 1.25rem;
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
