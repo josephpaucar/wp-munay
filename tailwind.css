@@ -1,10 +1,10 @@
 @tailwind base;
 
 .munay_footer ul{
-  @apply flex flex-col md:flex-row justify-center items-center text-white gap-5;
+  @apply flex flex-col md:flex-row justify-center items-center gap-5;
 }
 .munay_footer ul li a {
-  @apply font-medium tracking-wide uppercase transition-all duration-300;
+  @apply font-medium tracking-wide uppercase transition-all duration-300 text-white;
 }
 .munay_footer ul li a:hover {
   @apply text-yellow transition-all duration-300;

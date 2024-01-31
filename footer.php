@@ -2,7 +2,7 @@
     <div class="container mx-auto flex flex-col md:flex-row items-center">
         <div class="flex-none w-40 my-4 md:my-0">
             <a href="<?php echo get_home_url( ); ?>">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png" alt="Logo" >
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo.png" alt="Logo" >
             </a>
         </div>
         <div class="grow my-4 md:my-0">
@@ -17,13 +17,13 @@
         <div class="flex-none w-40 my-4 md:my-0">
             <div class="flex gap-4 justify-center md:justify-end">
                 <a href="https://www.instagram.com/jpaucar.vue/" target="_blank" class="duration-300 hover:scale-125 transition">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/fa_instagram.png" alt="Munay Instagram">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/fa_instagram.png" alt="Munay Instagram">
                 </a>
                 <a href="https://www.instagram.com/jpaucar.vue/" target="_blank" class="duration-300 hover:scale-125">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/fa_facebook.png" alt="Munay Facebook">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/fa_facebook.png" alt="Munay Facebook">
                 </a>
                 <a href="https://www.instagram.com/jpaucar.vue/" target="_blank" class="duration-300 hover:scale-125">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/fa_twitter.png" alt="Munay Twitter">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/fa_twitter.png" alt="Munay Twitter">
                 </a>
             </div>
         </div>

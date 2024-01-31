@@ -550,8 +550,6 @@ video {
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
-  --tw-text-opacity: 1;
-  color: rgb(238 238 247 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -564,6 +562,8 @@ video {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(238 238 247 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
@@ -631,10 +631,6 @@ video {
 
 .w-40 {
   width: 10rem;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .flex-none {
